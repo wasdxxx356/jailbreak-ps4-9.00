@@ -1,0 +1,38 @@
+0. Upgrade your PS4 to 9.00
+First of all, if your PS4 is not running firmware 9.00, you might want to upgrade it to that firmware. 
+
+Note: if you’re on firmware 9.03 or higher, you can’t go back to 9.00 and you will not be able to run the Jailbreak. So be careful not to update to 9.03 by mistake
+
+1. Prepare the magic USB stick
+Note: This step is only required once. You’ll need to use the USB stick every time you Jailbreak, but this preparation step is only needed the first time.
+
+The PS4 9.00 Jailbreak requires part of the exploit to be injected from a specifically crafted USB stick. You’ll need a dedicated USB stick for this, as it will be required each time you jailbreak the console, so use one that you don’t need for anything else. You don’t need anything huge, the image you’ll copy there is 4MB.
+
+Download the exfathax.img Plug your USB stick into your computer. You don’t need to format it, as the next step will do that for you.
+Download and install a tool to write the img file to your usb stick,such as Win32 Disk Manager
+Write the img file you just downloaded onto your USB stick. See the screenshot from the Jailbreak’s github for reference: https://wololo.net/wagic/wp-content/uploads/2021/12/usb_ps4_9.00_Jailbreak.png?ezimgfmt=rs%3Adevice%2Frscb1-1
+Your magic usb stick is now ready
+
+2. Note your PS4’s IP Address
+You’ll need to know your PS4 IP address in order to send payload to it. Before starting the Jailbreak process, go and note down your console’s IP address:
+
+Note down your PS4’s IP address in Settings > Network > View Connection Status
+3. Run the Jailbreak on your console
+With your PS4 running firmware 9.00, and your magic usb stick in hand, let’s proceed to actually running the exploit.
+
+point your PS4’s browser to any trusted host that has the exploit. This can be a local server that you set up yourself (you’ll need to put the files from the Jailbreak in there) or one of the public hosts we trust. For public hosts, two popular ones are:
+https://cthugha.exploit.menu/ (by Al-Azif)
+https://kameleonreloaded.github.io/900/ (by Kameleon)
+When you reach the exploit page, you will see a loading screen:https://wololo.net/wagic/wp-content/uploads/2021/12/ps4_jailbreak_9.00_how-to.jpg?ezimgfmt=ng:webp/ngcb1
+
+If the first step of the exploit (the webkit exploit) works, you will see a message asking you to insert the USB stick:https://wololo.net/wagic/wp-content/uploads/2021/12/ps4_jailbreak_9.00_how-to-insert_usb.jpg?ezimgfmt=ng:webp/ngcb1
+
+Go ahead and plug the usb stick (do not click the “ok” button of the dialog box!). A message saying “This USB Device Storage’s file system is unsupported” should pop up on the upper left of your screen:https://wololo.net/wagic/wp-content/uploads/2021/12/ps4_jailbreak_9.00_how-to-insert_usb_unsupported.jpg?ezimgfmt=ng:webp/ngcb1
+
+
+After that message has appeared, go ahead and click “ok” on the dialog box. You should now see a message saying “Awaiting payload”:https://wololo.net/wagic/wp-content/uploads/2021/12/ps4_jailbreak_9.00_how-to-awaiting-payload.jpg?ezimgfmt=ng:webp/ngcb1
+
+Your PS4 is now technically Jailbroken. Remove the usb stick from your PS4.
+
+Inject a Payload
+You will now be injecting a “payload”, that is, unsigned code that will run on your PS4. This can be something as simple as a bit of code that will be dumping some files from your PS4 firmware onto a disk, or run an ftp server on your PS4, or a full fledged Custom Firmware such as GoldHEN
